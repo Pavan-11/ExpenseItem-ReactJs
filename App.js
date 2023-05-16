@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
-import ExpenseItem from './ExpenseItem';
+import ExpenseItem from './components/Expenses/ExpenseItem';
 // import './App.css';
 import './index.css';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id : 'e1',
@@ -41,9 +41,6 @@ function App() {
           <ExpenseItem title = {e.title} amount = {e.amount} date = {e.date} location = {e.LocationOfPurchase}></ExpenseItem>
         )
       })}
-
-
-      
       {/* <h2>Lets Start here</h2> */}
      {/* <ExpenseItem title = {expenses[0].title} amount = {expenses[0].amount} date = {expenses[0].date} location = {expenses[0].LocationOfPurchase}></ExpenseItem>
      <ExpenseItem title = {expenses[1].title} amount = {expenses[1].amount} date = {expenses[1].date} location = {expenses[1].LocationOfPurchase}></ExpenseItem>
